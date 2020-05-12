@@ -1,0 +1,90 @@
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: lightgoldenrodyellow;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+input[name='taskInput']{
+
+    border-radius: 4px;
+}
+
+#createTaskButton{
+    display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#createTaskButton:active{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.6);
+}
+
+.validstyle{
+    border-color: lightgreen;
+}
+
+.invalidstyle{
+    border-color: red;
+}
+
+#taskList{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+#taskList > li{
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#taskList > li > p{
+    max-width: fit-content;
+    flex-grow: 10;
+    overflow: hidden;
+}
+
+#taskList > li > input{
+    flex-grow: 0.5;
+}
+
+.deleteButton{
+    background-color: darkred;
+    border-radius: 5px;
+    flex-grow: 0.6;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.deleteButton:active{
+    box-shadow: inset 0 0 8px rgba(255,255,255,0.6);
+}
